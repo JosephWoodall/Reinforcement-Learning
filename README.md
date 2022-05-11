@@ -46,3 +46,24 @@ License: MIT License
 #### Textworld — Text-based games
 - If you haven’t found the right environment for you yet, you can also easily create a RL environment to match your needs using Textworld. Textworld is not an environment per se, but a generator of environments instead. It’s implemented and maintained by Microsoft and the community, well documented and easy to use.
 License: MIT License
+
+
+
+### Making a Custom Environment using Gym as a template
+- The enviornment class needs to be inherited from gym.env. 
+- In the __init__, you'll need to create two variables with fixed names and types. You'll need an action space and observation space (self.action_space, and self.observation_space). These two need to be of Gym's class, space. There are two fundamental types in space: discrete, which is one dimension; and box, which is n-dimension. 
+- The reset function from Gym returns a value that's within the self.observation_space. This function is responsible for restarting the environment (at the beginning of a game, for example). The variable that is going to keep track of the current state of the environment is a variable called state. If you use a discrete space, then your state value needs to be an integer; if you use a box space, then you can make your state value a numpy array.
+- The step function from Gym takes one parameter, an action value, which is usually called action, that is within the self.action_space. Your action value can be an integer or a numpy array. The step function is the response function, which the agent provides the action they want to take, and the environment returns the state it brought them to. The return value is a 4-tuple, and returns in the following order: 
+    - state, the same type of variable as the return of the reset function of self.observation_space
+    - reward, a number that informs the agent about the immediate consequences of the action
+    - done, a boolean value that is True if the environment reached an endpoint, and should be reset as consequence, or False, if the environment should not be reset as consequence
+    - info, a dictionary that can be used during bug fixing, and can be empty. 
+- You can have as many helping functions within the environment class as you'd like as long as they don't use the reserved names from above.
+- The below functions are not required, but encouraged, when developing a custom environment: 
+    - """ metadata = {'render.modes' : ['human']} """, this function defines possible types for the render function
+    - render function: this function comes in handy when youre debugging, and is used to convert the state variable to something more human readable.
+    - close function: this function comes in handy when additional cleanup is closed. 
+    - seed function: this is used when you want to have reproducibility in an environment that uses random number generators
+- Stable Baselines is a good template to use as well, and the docs can be found here: https://stable-baselines.readthedocs.io/en/master/guide/custom_env.html
+
+You can find an example of a custom environment I am working on in the personal_rl directory of this repo!
