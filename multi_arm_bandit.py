@@ -1,6 +1,10 @@
 import numpy as np 
 import csv, math, random 
 
+"""
+Multi-arm bandit example
+"""
+
 def mab(iters):
     for x in range(iters): 
         probs = [1703, 1295, 728, 1196, 2695, 926, 1112, 2091, 952, 489]
