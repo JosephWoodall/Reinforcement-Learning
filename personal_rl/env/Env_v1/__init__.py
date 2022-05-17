@@ -1,1 +1,1 @@
-from personal_rl.env.Env_v1.Env_v1 import Env_v1
+from personal_rl.env.Env_v1.Factory import Factory
