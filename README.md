@@ -67,3 +67,9 @@ License: MIT License
 - Stable Baselines is a good template to use as well, and the docs can be found here: https://stable-baselines.readthedocs.io/en/master/guide/custom_env.html
 
 You can find an example of a custom environment I am working on in the personal_rl directory of this repo!
+
+## Interesting Research Articles
+
+#### Assessing Human Interaction in Virtual Reality With Continually Learning Prediction Agents Based on Reinforcement Learning Algorithms: A Pilot Study
+https://arxiv.org/pdf/2112.07774.pdf
+
