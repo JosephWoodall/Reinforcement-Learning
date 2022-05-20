@@ -73,3 +73,9 @@ You can find an example of a custom environment I am working on in the personal_
 #### Assessing Human Interaction in Virtual Reality With Continually Learning Prediction Agents Based on Reinforcement Learning Algorithms: A Pilot Study
 https://arxiv.org/pdf/2112.07774.pdf
 
+#### Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996
+https://github.com/AI4Finance-Foundation/Deep-Reinforcement-Learning-for-Automated-Stock-Trading-Ensemble-Strategy-ICAIF-2020
+https://github.com/AI4Finance-Foundation/FinRL
+https://github.com/AI4Finance-Foundation/ElegantRL
+
