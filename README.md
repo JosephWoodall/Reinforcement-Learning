@@ -7,6 +7,8 @@ BUT, Reinforcement Learning has two factors that are slowing it down (which have
 - The need for better benchmarks. In supervised learning, progress has been driven by large labeled datasets like ImageNet. In Reinforcement Learning, the closest equivalent would be a large and diverse collection of environments. However, the existing open-source collections of Reinforcement Learning environments dont have enough variety, and they are often difficult to set up and use. 
 - Lack of standardization of environments used in publications. Subtle differences in the problem definition, such as the reward function or the set of actions, can drastically alter a task’s difficulty. This issue makes it difficult to reproduce published research and compare results from different papers.
 
+You may find a *very* high level, video explanation of reinforcement learning on my youtube channel: https://www.youtube.com/watch?v=dNoeaEdPEy4
+
 
 ## Environments
 There are many environments that are ready to use out of the box, which can be found below: 
